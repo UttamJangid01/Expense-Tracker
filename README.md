@@ -37,7 +37,4 @@ Tools:
 - VS Code / IntelliJ
 - Postman (API testing)
 
----
-
-## 📂 Project Structure
 
