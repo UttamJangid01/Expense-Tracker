@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    max-width: 420px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #222;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* RADIO BUTTONS */
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-card {
+    flex: 1;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.radio-card input {
+    display: none;
+}
+
+.radio-card span {
+    font-size: 14px;
+    color: #333;
+}
+
+.radio-card:has(input:checked) {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+    font-weight: 600;
+}
+
+/* BUTTON */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
